@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>워버비그룹</title>
+
+    <meta property="og:title" content="워너비그룹">    
+    <meta property="og:description" content="다양한 정보와 유용한 컨텐츠를 만나 보세요.">
+
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        ol, ul, li {list-style: none;}
+
+        .wrap {position: relative;}
+        .img_group ul {display: flex; flex-wrap: wrap;}
+        .img_group li {width: calc(100% / 4);}
+        .img_group li img {display: block; width: 100%; height: 100vh;}
+
+        /* mediaquery */
+        @media screen and (max-width: 1350px){
+            .img_group li {width: 100%;}
+            .img_group li img {width: 100%; height: calc(100vh / 1);}		//이미지갯수만큼나누기
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="img_group">
+            <ul>
+                <li id="top01">
+                	<a href="https://wannabecho.github.io/index.html" target="_blank"> <!--클릭 이동 새창으로 열기-->
+                		<img src="img/mainP.jpg" alt="img0">
+                	</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
